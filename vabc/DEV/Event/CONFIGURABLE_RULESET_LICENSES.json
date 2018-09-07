@@ -1,0 +1,38 @@
+{
+  "WorkflowTaskUpdateAfter": {
+    "StandardScripts": [
+      "STDBASE_LICENSE_ISSUANCE",
+      "STDBASE_LICENSE_ISSUANCE_CUSTOM",
+      "STDBASE_SEND_CONTACT_EMAILS",
+      "STDBASE_RECORD_AUTOMATION"
+    ]
+  },
+  "PaymentReceiveAfter": {
+    "StandardScripts": [
+      "STDBASE_LICENSE_ISSUANCE",
+      "STDBASE_LICENSE_ISSUANCE_CUSTOM",
+      "STDBASE_SEND_CONTACT_EMAILS",
+      "STDBASE_RECORD_AUTOMATION"
+    ]
+  },
+  "ApplicationSubmitAfter": {
+    "StandardScripts": [
+      "STDBASE_SEND_CONTACT_EMAILS"
+    ]
+  },
+  "ConvertToRealCAPAfter": {
+    "StandardScripts": [
+      "STDBASE_SEND_CONTACT_EMAILS"
+    ]
+  },
+  "Pageflow": {
+    "StandardScripts": [
+      "STDBASE_REQUIRED_DOCUMENTS_CUSTOM"
+    ]
+  },
+  "ApplicationSubmitBefore": {
+  "StandardScripts": [
+    "STDBASE_REQUIRED_DOCUMENTS_CUSTOM"
+  ]
+}
+}

@@ -1,0 +1,217 @@
+{
+  "Licenses/ABC/Shipper/Application": {
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_VALIDATION",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ]
+        },
+        "action": {
+          "parentLicense": "Licenses/ABC/*/License",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [
+            "ALL"
+          ],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "oneYearEndOfMonth",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "Mailing",
+          "createLP": true,
+          "licenseTable": "",
+          "childLicense": "",
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+   "Licenses/ABC/Privilege/Application": {
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_VALIDATION",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ]
+        },
+        "action": {
+          "parentLicense": "Licenses/ABC/*/License",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [
+            "ALL"
+          ],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "oneYearEndOfMonth",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "Mailing",
+          "createLP": true,
+          "licenseTable": "",
+          "childLicense": "",
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Industry/*/Application": {
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_VALIDATION",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ]
+        },
+        "action": {
+          "parentLicense": "Licenses/Industry/*/License",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [
+            "ALL"
+          ],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "oneYearEndOfMonth",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "Mailing",
+          "createLP": true,
+          "licenseTable": "",
+          "childLicense": "",
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Permits/*/Application": {
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_VALIDATION",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ]
+        },
+        "action": {
+          "parentLicense": "Licenses/Permits/*/License",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [
+            "ALL"
+          ],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "oneYearEndOfMonth",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "Permitee",
+          "contactAddressType": "Mailing",
+          "createLP": true,
+          "licenseTable": "",
+          "childLicense": "",
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Retail/*/Application": {
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_VALIDATION",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ]
+        },
+        "action": {
+          "parentLicense": "Licenses/Retail/*/License",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [
+            "ALL"
+          ],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "oneYearEndOfMonth",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "Mailing",
+          "createLP": true,
+          "licenseTable": "",
+          "childLicense": "",
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

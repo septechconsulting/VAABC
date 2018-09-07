@@ -1,0 +1,538 @@
+{
+  "Licenses/Banquet/Mixed Beverage/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Add License Fee Item",
+          "operators": {
+
+          }
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          },
+          "balanceAllowed": true
+        },
+        "action": {
+          "activateTask": [
+
+          ],
+          "daysOut": "",
+          "useCalendarDays": false,
+          "deactivateTask": [
+
+          ],
+          "deleteTask": [
+
+          ],
+          "updateTask": [
+
+          ],
+          "invoiceFees": "",
+          "createChild": "",
+          "createParent": "",
+          "addCondition": "",
+          "addConditionSeverity": " ",
+          "addConditionType": "",
+          "removeConditionType": "",
+          "removeCondition": "",
+          "addComment": "",
+          "newStatus": "",
+          "assignToUserID": "",
+          "assessFees": [
+            {
+              "feeSchedule": "ABC_BANMB_A",
+              "feeCode": "ABC-BANMB-XD",
+              "feeQuantity": 1,
+              "feeInvoice": "Y",
+              "feePeriod": "FINAL"
+            }
+          ],
+          "updateExpDate": {
+          },
+          "primaryContactType": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet Mixed Beverage/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Add License Fee Item",
+          "operators": {
+
+          }
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          },
+          "balanceAllowed": true
+        },
+        "action": {
+          "activateTask": [
+
+          ],
+          "daysOut": "",
+          "useCalendarDays": false,
+          "deactivateTask": [
+
+          ],
+          "deleteTask": [
+
+          ],
+          "updateTask": [
+
+          ],
+          "invoiceFees": "",
+          "createChild": "",
+          "createParent": "",
+          "addCondition": "",
+          "addConditionSeverity": " ",
+          "addConditionType": "",
+          "removeConditionType": "",
+          "removeCondition": "",
+          "addComment": "",
+          "newStatus": "",
+          "assignToUserID": "",
+          "assessFees": [
+            {
+              "feeSchedule": "ABC_BANF_A",
+              "feeCode": "ABC-BANF-XD",
+              "feeQuantity": 1,
+              "feeInvoice": "Y",
+              "feePeriod": "FINAL"
+            }
+          ],
+          "updateExpDate": {
+          },
+          "primaryContactType": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet Special Event/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Add License Fee Item",
+          "operators": {
+
+          }
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          },
+          "balanceAllowed": true
+        },
+        "action": {
+          "activateTask": [
+
+          ],
+          "daysOut": "",
+          "useCalendarDays": false,
+          "deactivateTask": [
+
+          ],
+          "deleteTask": [
+
+          ],
+          "updateTask": [
+
+          ],
+          "invoiceFees": "",
+          "createChild": "",
+          "createParent": "",
+          "addCondition": "",
+          "addConditionSeverity": " ",
+          "addConditionType": "",
+          "removeConditionType": "",
+          "removeCondition": "",
+          "addComment": "",
+          "newStatus": "",
+          "assignToUserID": "",
+          "assessFees": [
+            {
+              "feeSchedule": "ABC_BANS_A",
+              "feeCode": "ABC-BANS-XD  ",
+              "feeQuantity": 1,
+              "feeInvoice": "Y",
+              "feePeriod": "FINAL"
+            }
+          ],
+          "updateExpDate": {
+          },
+          "primaryContactType": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Add License Fee Item",
+          "operators": {
+
+          }
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          },
+          "balanceAllowed": true
+        },
+        "action": {
+          "activateTask": [
+
+          ],
+          "daysOut": "",
+          "useCalendarDays": false,
+          "deactivateTask": [
+
+          ],
+          "deleteTask": [
+
+          ],
+          "updateTask": [
+
+          ],
+          "invoiceFees": "",
+          "createChild": "",
+          "createParent": "",
+          "addCondition": "",
+          "addConditionSeverity": " ",
+          "addConditionType": "",
+          "removeConditionType": "",
+          "removeCondition": "",
+          "addComment": "",
+          "newStatus": "",
+          "assignToUserID": "",
+          "assessFees": [
+            {
+              "feeSchedule": "ABC_BANP_A",
+              "feeCode": "ABC-BANP-LI",
+              "feeQuantity": 1,
+              "feeInvoice": "Y",
+              "feePeriod": "FINAL"
+            }
+          ],
+          "updateExpDate": {
+          },
+          "primaryContactType": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet Mixed Beverage Club/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Add License Fee Item",
+          "operators": {
+
+          }
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          },
+          "balanceAllowed": true
+        },
+        "action": {
+          "activateTask": [
+
+          ],
+          "daysOut": "",
+          "useCalendarDays": false,
+          "deactivateTask": [
+
+          ],
+          "deleteTask": [
+
+          ],
+          "updateTask": [
+
+          ],
+          "invoiceFees": "",
+          "createChild": "",
+          "createParent": "",
+          "addCondition": "",
+          "addConditionSeverity": " ",
+          "addConditionType": "",
+          "removeConditionType": "",
+          "removeCondition": "",
+          "addComment": "",
+          "newStatus": "",
+          "assignToUserID": "",
+          "assessFees": [
+            {
+              "feeSchedule": "ABC_BANC_A",
+              "feeCode": "ABC-BANC-XD",
+              "feeQuantity": 1,
+              "feeInvoice": "Y",
+              "feePeriod": "FINAL"
+            }
+          ],
+          "updateExpDate": {
+          },
+          "primaryContactType": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Club/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Add License Fee Item",
+          "operators": {
+
+          }
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          },
+          "balanceAllowed": true
+        },
+        "action": {
+          "activateTask": [
+
+          ],
+          "daysOut": "",
+          "useCalendarDays": false,
+          "deactivateTask": [
+
+          ],
+          "deleteTask": [
+
+          ],
+          "updateTask": [
+
+          ],
+          "invoiceFees": "",
+          "createChild": "",
+          "createParent": "",
+          "addCondition": "",
+          "addConditionSeverity": " ",
+          "addConditionType": "",
+          "removeConditionType": "",
+          "removeCondition": "",
+          "addComment": "",
+          "newStatus": "",
+          "assignToUserID": "",
+          "assessFees": [
+            {
+              "feeSchedule": "ABC_BANC_A",
+              "feeCode": "ABC-BANC-XD",
+              "feeQuantity": 1,
+              "feeInvoice": "Y",
+              "feePeriod": "FINAL"
+            }
+          ],
+          "updateExpDate": {
+          },
+          "primaryContactType": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Mixed Beverage Club/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Add License Fee Item",
+          "operators": {
+
+          }
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          },
+          "balanceAllowed": true
+        },
+        "action": {
+          "activateTask": [
+
+          ],
+          "daysOut": "",
+          "useCalendarDays": false,
+          "deactivateTask": [
+
+          ],
+          "deleteTask": [
+
+          ],
+          "updateTask": [
+
+          ],
+          "invoiceFees": "",
+          "createChild": "",
+          "createParent": "",
+          "addCondition": "",
+          "addConditionSeverity": " ",
+          "addConditionType": "",
+          "removeConditionType": "",
+          "removeCondition": "",
+          "addComment": "",
+          "newStatus": "",
+          "assignToUserID": "",
+          "assessFees": [
+            {
+              "feeSchedule": "ABC_BANC_A",
+              "feeCode": "ABC-BANC-XD",
+              "feeQuantity": 1,
+              "feeInvoice": "Y",
+              "feePeriod": "FINAL"
+            }
+          ],
+          "updateExpDate": {
+          },
+          "primaryContactType": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Tasting/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Add License Fee Item",
+          "operators": {
+
+          }
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          },
+          "balanceAllowed": true
+        },
+        "action": {
+          "activateTask": [
+
+          ],
+          "daysOut": "",
+          "useCalendarDays": false,
+          "deactivateTask": [
+
+          ],
+          "deleteTask": [
+
+          ],
+          "updateTask": [
+
+          ],
+          "invoiceFees": "",
+          "createChild": "",
+          "createParent": "",
+          "addCondition": "",
+          "addConditionSeverity": " ",
+          "addConditionType": "",
+          "removeConditionType": "",
+          "removeCondition": "",
+          "addComment": "",
+          "newStatus": "",
+          "assignToUserID": "",
+          "assessFees": [
+            {
+              "feeSchedule": "ABC_BANT_A",
+              "feeCode": "ABC-BANT-XD",
+              "feeQuantity": 1,
+              "feeInvoice": "Y",
+              "feePeriod": "FINAL"
+            }
+          ],
+          "updateExpDate": {
+          },
+          "primaryContactType": ""
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

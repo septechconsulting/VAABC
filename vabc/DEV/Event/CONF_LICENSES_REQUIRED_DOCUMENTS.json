@@ -1,0 +1,1293 @@
+{
+  "Licenses/*/*/Application": {
+    "Pageflow": [
+      {
+        "preScript": "SPONSORING_ORGANIZATION_TAX_EXEMPT",
+        "metadata": {
+          "description": "required document",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "customLists": [],
+          "contactFields": {
+            "contactType": "Sponsoring Organization"
+          },
+          "lpFields": {},
+          "customFields": {},
+          "addressFields": {},
+          "parcelFields": {},
+          "task": [],
+          "status": []
+        },
+        "action": {
+          "requiredDocuments": [
+            "Minutes of Meetings Pertaining to Event",
+            "List of Current Officers",
+            "Proof of verifiable and accurate financial records"
+          ],
+          "requirementType": "STANDARD",
+          "validationMessage": ""
+        },
+        "postScript ": ""
+      }
+    ]
+  },
+  
+  "Licenses/Banquet/*/Application": {
+    "Pageflow": [
+      { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+        "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+          "customFields": {
+            "Will the event be advertised": "Yes"
+          },
+          "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+        },
+        "action": { "requiredDocuments": [ "Invitation, E-Vite, Flyer, or advertisement" ],
+          "requirementType": "STANDARD",
+          "validationMessage": "Please upload Invitation, E-Vite, Flyer, or advertisement."
+        },
+        "postScript ": ""
+    },
+    { "preScript": "", "metadata": { "description": "required document", "operators": { "customFields" : "!=" } },
+      "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+        "customFields": {
+          "Place for event": "Private Home"
+        },
+        "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+      },
+      "action": { "requiredDocuments": [ "Facility Use Contract" ],
+        "requirementType": "STANDARD",
+        "validationMessage": "Please upload Facility Use Contract."
+      },
+      "postScript ": ""
+    }
+    ],
+    "ApplicationSubmitBefore": [
+      { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Will the event be advertised": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Invitation, E-Vite, Flyer, or advertisement" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Invitation, E-Vite, Flyer, or advertisement"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { "customFields" : "!=" } },
+          "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Place for event": "Private Home"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": {
+            "requiredDocuments": [ "Facility Use Contract" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Facility Use Contract."
+          },
+          "postScript ": ""
+        }
+    ]
+  },
+  
+  "Licenses/Banquet/Banquet Special Event/Application" : {
+	"Pageflow" : [
+	 { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Alcoholic Beverage Sold to Public": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Services Agreement between applicant and provider" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Services Agreement between applicant and provider"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of verifiable and accurate financial records"],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of verifiable and accurate financial records."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof that the organization conducts regular meetings" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof that the organization conducts regular meetings"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of exemption from federal and state taxes" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of exemption from federal and state taxes"
+          },
+          "postScript ": ""
+        },
+         
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "Membership List" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Membership List."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "By-laws or articles that list the organization's stated purpose" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload by-laws or articles that list the organization's stated purpose."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Charter with the State Corporation Commission" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload charter with the State Corporation Commission."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Other Federal IRS Tax-Exempt Determination Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload other Federal IRS Tax-Exempt Determination Letter."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "501-C-3 Tax-Exempt Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload 501-C-3 Tax-Exempt Letter."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+              "criteria": { "customLists": [], "contactFields": {
+         	"asi.Is the group an election campaign or political action committee 527" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Statement of Organization, Letter of Good Standing" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Statement of Organization, Letter of Good Standing."
+          },
+          "postScript ": ""
+        }
+	],
+	"ApplicationSubmitBefore" : [
+	 { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Alcoholic Beverage Sold to Public": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Services Agreement between applicant and provider" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Services Agreement between applicant and provider"
+          },
+          "postScript ": ""
+        },
+           { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of verifiable and accurate financial records"],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of verifiable and accurate financial records."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof that the organization conducts regular meetings" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof that the organization conducts regular meetings"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of exemption from federal and state taxes" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of exemption from federal and state taxes"
+          },
+          "postScript ": ""
+        },
+         
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "Membership List" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Membership List."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "By-laws or articles that list the organization's stated purpose" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload by-laws or articles that list the organization's stated purpose."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Charter with the State Corporation Commission" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload charter with the State Corporation Commission."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Other Federal IRS Tax-Exempt Determination Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload other Federal IRS Tax-Exempt Determination Letter."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "501-C-3 Tax-Exempt Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload 501-C-3 Tax-Exempt Letter."
+          },
+          "postScript ": ""
+        }, 
+                 
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Is the group an election campaign or political action committee 527" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Statement of Organization, Letter of Good Standing" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Statement of Organization, Letter of Good Standing."
+          },
+          "postScript ": ""
+        }
+	]
+  },
+   "Licenses/Banquet/Manufacturer Event/Application": {
+    "Pageflow": [
+      { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+        "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+          "customFields": {
+            "Production Contracts exist": "Yes"
+          },
+          "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+        },
+        "action": { "requiredDocuments": [ "Contract or Agreement with production company" ],
+          "requirementType": "STANDARD",
+          "validationMessage": "Please upload Contract or Agreement with production company."
+        },
+        "postScript ": ""
+    }
+    ],
+    "ApplicationSubmitBefore": [
+      { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Production Contracts exist": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Contract or Agreement with production company" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please uploadContract or Agreement with production company"
+          },
+          "postScript ": ""
+        } 
+    ]
+  },
+   "Licenses/Banquet/Mixed Beverage Club/Application" : {
+	"Pageflow" : [
+	 { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Alcoholic Beverage Sold to Public": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Services Agreement between applicant and provider" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Services Agreement between applicant and provider"
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of verifiable and accurate financial records"],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of verifiable and accurate financial records."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof that the organization conducts regular meetings" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof that the organization conducts regular meetings"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of exemption from federal and state taxes" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of exemption from federal and state taxes"
+          },
+          "postScript ": ""
+        },
+         
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "Membership List" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Membership List."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "By-laws or articles that list the organization's stated purpose" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload by-laws or articles that list the organization's stated purpose."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Charter with the State Corporation Commission" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload charter with the State Corporation Commission."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Other Federal IRS Tax-Exempt Determination Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload other Federal IRS Tax-Exempt Determination Letter."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "501-C-3 Tax-Exempt Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload 501-C-3 Tax-Exempt Letter."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+              "criteria": { "customLists": [], "contactFields": {
+         	"asi.Is the group an election campaign or political action committee 527" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Statement of Organization, Letter of Good Standing" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Statement of Organization, Letter of Good Standing."
+          },
+          "postScript ": ""
+        }
+	],
+	"ApplicationSubmitBefore" : [
+	 { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Alcoholic Beverage Sold to Public": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Services Agreement between applicant and provider" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Services Agreement between applicant and provider"
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of verifiable and accurate financial records"],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of verifiable and accurate financial records."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof that the organization conducts regular meetings" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof that the organization conducts regular meetings"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of exemption from federal and state taxes" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of exemption from federal and state taxes"
+          },
+          "postScript ": ""
+        },
+         
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "Membership List" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Membership List."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "By-laws or articles that list the organization's stated purpose" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload by-laws or articles that list the organization's stated purpose."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Charter with the State Corporation Commission" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload charter with the State Corporation Commission."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Other Federal IRS Tax-Exempt Determination Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload other Federal IRS Tax-Exempt Determination Letter."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "501-C-3 Tax-Exempt Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload 501-C-3 Tax-Exempt Letter."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Is the group an election campaign or political action committee 527" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Statement of Organization, Letter of Good Standing" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Statement of Organization, Letter of Good Standing."
+          },
+          "postScript ": ""
+        }
+	]
+  },
+   "Licenses/Banquet/Banquet Mixed Beverage/Application" : {
+	"Pageflow" : [
+	 { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Alcoholic Beverage Sold to Public": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Services Agreement between applicant and provider" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Services Agreement between applicant and provider"
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of verifiable and accurate financial records"],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of verifiable and accurate financial records."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof that the organization conducts regular meetings" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof that the organization conducts regular meetings"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of exemption from federal and state taxes" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of exemption from federal and state taxes"
+          },
+          "postScript ": ""
+        },
+         
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "Membership List" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Membership List."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "By-laws or articles that list the organization's stated purpose" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload by-laws or articles that list the organization's stated purpose."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Charter with the State Corporation Commission" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload charter with the State Corporation Commission."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Other Federal IRS Tax-Exempt Determination Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload other Federal IRS Tax-Exempt Determination Letter."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "501-C-3 Tax-Exempt Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload 501-C-3 Tax-Exempt Letter."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+              "criteria": { "customLists": [], "contactFields": {
+         	"asi.Is the group an election campaign or political action committee 527" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Statement of Organization, Letter of Good Standing" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Statement of Organization, Letter of Good Standing."
+          },
+          "postScript ": ""
+        }
+	],
+	"ApplicationSubmitBefore" : [
+	 { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Alcoholic Beverage Sold to Public": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Services Agreement between applicant and provider" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Services Agreement between applicant and provider"
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of verifiable and accurate financial records"],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of verifiable and accurate financial records."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof that the organization conducts regular meetings" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof that the organization conducts regular meetings"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of exemption from federal and state taxes" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of exemption from federal and state taxes"
+          },
+          "postScript ": ""
+        },
+         
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "Membership List" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Membership List."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "By-laws or articles that list the organization's stated purpose" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload by-laws or articles that list the organization's stated purpose."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Charter with the State Corporation Commission" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload charter with the State Corporation Commission."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Other Federal IRS Tax-Exempt Determination Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload other Federal IRS Tax-Exempt Determination Letter."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "501-C-3 Tax-Exempt Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload 501-C-3 Tax-Exempt Letter."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Is the group an election campaign or political action committee 527" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Statement of Organization, Letter of Good Standing" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Statement of Organization, Letter of Good Standing."
+          },
+          "postScript ": ""
+        }
+	]
+  },
+   "Licenses/Banquet/Mixed Beverage/Application" : {
+	"Pageflow" : [
+	 { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Alcoholic Beverage Sold to Public": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Services Agreement between applicant and provider" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Services Agreement between applicant and provider"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of verifiable and accurate financial records"],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of verifiable and accurate financial records."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof that the organization conducts regular meetings" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof that the organization conducts regular meetings"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of exemption from federal and state taxes" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of exemption from federal and state taxes"
+          },
+          "postScript ": ""
+        },
+         
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "Membership List" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Membership List."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "By-laws or articles that list the organization's stated purpose" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload by-laws or articles that list the organization's stated purpose."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Charter with the State Corporation Commission" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload charter with the State Corporation Commission."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Other Federal IRS Tax-Exempt Determination Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload other Federal IRS Tax-Exempt Determination Letter."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "501-C-3 Tax-Exempt Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload 501-C-3 Tax-Exempt Letter."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+              "criteria": { "customLists": [], "contactFields": {
+         	"asi.Is the group an election campaign or political action committee 527" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Statement of Organization, Letter of Good Standing" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Statement of Organization, Letter of Good Standing."
+          },
+          "postScript ": ""
+        }
+	],
+	"ApplicationSubmitBefore" : [
+	 { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Alcoholic Beverage Sold to Public": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Services Agreement between applicant and provider" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Services Agreement between applicant and provider"
+          },
+          "postScript ": ""
+        },
+       { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of verifiable and accurate financial records"],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of verifiable and accurate financial records."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof that the organization conducts regular meetings" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof that the organization conducts regular meetings"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of exemption from federal and state taxes" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of exemption from federal and state taxes"
+          },
+          "postScript ": ""
+        },
+         
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "Membership List" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Membership List."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "By-laws or articles that list the organization's stated purpose" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload by-laws or articles that list the organization's stated purpose."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Charter with the State Corporation Commission" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload charter with the State Corporation Commission."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Other Federal IRS Tax-Exempt Determination Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload other Federal IRS Tax-Exempt Determination Letter."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "501-C-3 Tax-Exempt Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload 501-C-3 Tax-Exempt Letter."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Is the group an election campaign or political action committee 527" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Statement of Organization, Letter of Good Standing" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Statement of Organization, Letter of Good Standing."
+          },
+          "postScript ": ""
+        }
+	]
+  },
+    "Licenses/Banquet/Tasting/Application" : {
+	"Pageflow" : [
+	 { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Alcoholic Beverage Sold to Public": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Services Agreement between applicant and provider" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Services Agreement between applicant and provider"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of verifiable and accurate financial records"],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of verifiable and accurate financial records."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof that the organization conducts regular meetings" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof that the organization conducts regular meetings"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of exemption from federal and state taxes" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of exemption from federal and state taxes"
+          },
+          "postScript ": ""
+        },
+         
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "Membership List" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Membership List."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "By-laws or articles that list the organization's stated purpose" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload by-laws or articles that list the organization's stated purpose."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Charter with the State Corporation Commission" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload charter with the State Corporation Commission."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Other Federal IRS Tax-Exempt Determination Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload other Federal IRS Tax-Exempt Determination Letter."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "501-C-3 Tax-Exempt Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload 501-C-3 Tax-Exempt Letter."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+              "criteria": { "customLists": [], "contactFields": {
+         	"asi.Is the group an election campaign or political action committee 527" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Statement of Organization, Letter of Good Standing" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Statement of Organization, Letter of Good Standing."
+          },
+          "postScript ": ""
+        }
+	],
+	"ApplicationSubmitBefore" : [
+	 { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": { }, "lpFields": {},
+            "customFields": {
+              "Alcoholic Beverage Sold to Public": "Yes"
+            },
+            "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Services Agreement between applicant and provider" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Services Agreement between applicant and provider"
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of verifiable and accurate financial records"],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of verifiable and accurate financial records."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof that the organization conducts regular meetings" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof that the organization conducts regular meetings"
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "Proof of exemption from federal and state taxes" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload proof of exemption from federal and state taxes"
+          },
+          "postScript ": ""
+        },
+         
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "Membership List" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Membership List."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [  "By-laws or articles that list the organization's stated purpose" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload by-laws or articles that list the organization's stated purpose."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "N" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Charter with the State Corporation Commission" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload charter with the State Corporation Commission."
+          },
+          "postScript ": ""
+        },
+          { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Other Federal IRS Tax-Exempt Determination Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload other Federal IRS Tax-Exempt Determination Letter."
+          },
+          "postScript ": ""
+        },
+         { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Tax Exempt" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": [ "501-C-3 Tax-Exempt Letter" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload 501-C-3 Tax-Exempt Letter."
+          },
+          "postScript ": ""
+        },
+        { "preScript": "", "metadata": { "description": "required document", "operators": { } },
+         "criteria": { "customLists": [], "contactFields": {
+         	"asi.Is the group an election campaign or political action committee 527" : "Y" }, "lpFields": {},
+            "customFields": { }, "addressFields": {}, "parcelFields": {}, "task": [], "status": []
+          },
+          "action": { "requiredDocuments": ["Statement of Organization, Letter of Good Standing" ],
+            "requirementType": "STANDARD",
+            "validationMessage": "Please upload Statement of Organization, Letter of Good Standing."
+          },
+          "postScript ": ""
+        }
+	]
+  }
+  
+
+}

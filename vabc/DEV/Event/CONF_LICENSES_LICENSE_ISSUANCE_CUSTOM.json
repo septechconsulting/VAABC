@@ -1,0 +1,1344 @@
+{
+"Licenses/ABC/Internet Retailer/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_VALIDATION",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+           "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ]
+        },
+        "action": {
+          "parentLicense": "Licenses/ABC/Internet Retailer/License",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [
+            "ALL"
+          ],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "oneYearEndOfMonth",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "Mailing",
+          "createLP": true,
+          "licenseTable": "",
+          "childLicense": "",
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Mixed Beverage/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Mixed Beverage/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      },
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "No"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Mixed Beverage/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ],
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Mixed Beverage/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet Mixed Beverage/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet Mixed Beverage/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      },
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "No"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet Mixed Beverage/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ],
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet Mixed Beverage/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet Special Event/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet Special Event/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      },
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "No"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet Special Event/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ],
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet Special Event/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      },
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "No"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ],
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet Mixed Beverage Club/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet Mixed Beverage Club/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      },
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "No"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet Mixed Beverage Club/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ],
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Banquet Mixed Beverage Club/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Club/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Club/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      },
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "No"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Club/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ],
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Club/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Mixed Beverage Club/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Mixed Beverage Club/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      },
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "No"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Mixed Beverage Club/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ],
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Mixed Beverage Club/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Tasting/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Tasting/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      },
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "No"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Tasting/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ],
+    "PaymentReceiveAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "recordStatus": [ "Approved" ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Tasting/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  },
+
+  "Licenses/Banquet/Manufacturer Event/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "PRE_SCRIPT_LICENSE_ISSUANCE_CANCLE_IF_BALANCE_NOT_ZERO",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+
+          }
+        },
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ]
+        },
+        "action": {
+          "parentLicense": "",
+          "issuedStatus": "Active",
+          "copyCustomFields": [
+            "ALL"
+          ],
+          "copyCustomTables": [],
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": [
+            "ALL"
+          ],
+          "expirationType": "Function",
+          "customExpirationFunction": "getDateFromRow",
+          "expirationPeriod": "",
+          "refLPType": "",
+          "contactType": "License Holder",
+          "contactAddressType": "",
+          "createLP": false,
+          "licenseTable": "DAY AND TIME INFORMATION",
+          "tableLicense": "Licenses/Banquet/Manufacturer Event/License",
+          "childLicense": false,
+          "columnsMapping": [
+
+          ],
+          "mapRow": true,
+          "recordIdField": ""
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

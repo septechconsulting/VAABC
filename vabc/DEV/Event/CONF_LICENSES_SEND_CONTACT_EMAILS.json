@@ -1,0 +1,495 @@
+{
+  "Licenses/*/*/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Sends Email Template to necessary Contact Types with available parameters",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "status": [
+            "Refused"
+          ]
+        },
+        "action": {
+          "notificationTemplate": "ABC APPLICATION DENIED",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      },
+      {
+        "metadata": {
+          "description": "Sends Email Template to necessary Contact Types with available parameters",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "status": [
+            "Additional Info Required"
+          ]
+        },
+        "action": {
+          "notificationTemplate": "ABC REMINDER WAITING ON INFORMATION",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      },
+      {
+        "metadata": {
+          "description": "Sends Email Template to necessary Contact Types with available parameters",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "status": [
+            "Withdrawn"
+          ]
+        },
+        "action": {
+          "notificationTemplate": "ABC - APP WITHDRAWAL CONFIRMATION SUBMITTED",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      },
+      {
+        "metadata": {
+          "description": "Sends Email Template to necessary Contact Types with available parameters",
+          "operators": {}
+        },
+        "preScript": "PRE_SCRIPT_SEND_CONTACT_EMAILS_CANCLE_IF_NO_BALANCE",
+        "criteria": {
+          "status": [
+            "Issued",
+            "Approved"
+          ]
+        },
+        "action": {
+          "notificationTemplate": "ABC APPLICATION AWAITING PAYMENT",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ],
+    "ApplicationSubmitAfter": [
+      {
+        "metadata": {
+          "description": "Sends Email Template to necessary Contact Types with available parameters",
+          "operators": {}
+        },
+        "preScript": "PRE_SCRIPT_SEND_CONTACT_EMAILS_CANCLE_IF_PUBLIC_USER",
+        "criteria": {},
+        "action": {
+          "notificationTemplate": "ABC CONFIRMATION APPLICATION RECEIVED SUBMITTED",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [
+            "ALL"
+          ],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ],
+    "ConvertToRealCAPAfter": [
+      {
+        "metadata": {
+          "description": "Sends Email Template to necessary Contact Types with available parameters",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {},
+        "action": {
+          "notificationTemplate": "ABC CONFIRMATION APPLICATION RECEIVED SUBMITTED",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [
+            "ALL"
+          ],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Send approval notification but fees due",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "notificationTemplate": "APPROVAL_BUT_FEES_DUE",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Mixed Beverage/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Send approval notification but fees due",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "notificationTemplate": "APPROVAL_BUT_FEES_DUE",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet Mixed Beverage/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Send approval notification but fees due",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "notificationTemplate": "APPROVAL_BUT_FEES_DUE",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet Special Event/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Send approval notification but fees due",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "notificationTemplate": "APPROVAL_BUT_FEES_DUE",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Banquet Mixed Beverage Club/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Send approval notification but fees due",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "notificationTemplate": "APPROVAL_BUT_FEES_DUE",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Club/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Send approval notification but fees due",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "notificationTemplate": "APPROVAL_BUT_FEES_DUE",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Mixed Beverage Club/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Send approval notification but fees due",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "notificationTemplate": "APPROVAL_BUT_FEES_DUE",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ]
+  },
+  "Licenses/Banquet/Tasting/Application": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Send approval notification but fees due",
+          "operators": {}
+        },
+        "preScript": "",
+        "criteria": {
+          "task": [
+
+          ],
+          "status": [
+            "Approved",
+            "Approved with Restrictions"
+          ],
+          "customFields": {
+            "License Fee Waiver": "Yes",
+            "Waiver Status": "Not Approved"
+          }
+        },
+        "action": {
+          "notificationTemplate": "APPROVAL_BUT_FEES_DUE",
+          "notificationReport": [],
+          "reportParamContactType": "",
+          "notifyContactTypes": [
+            "Applicant"
+          ],
+          "additionalEmailsTo": [],
+          "notifyLPTypes": [],
+          "url4ACA": "",
+          "fromEmail": "",
+          "createFromParent": false,
+          "reportingInfoStandards": "",
+          "balanceAllowed": true
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}
